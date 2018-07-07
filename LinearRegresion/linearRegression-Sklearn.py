@@ -35,7 +35,8 @@ myLinearModel.fit(dataset[["X1", "X2"]], dataset["Y"])
 plt.figure("NON-normalized graph")
 plt.scatter(X.X1, Y, marker='^', c='g')
 plt.scatter(X.X2, Y, marker='^', c='r')
-plt.plot(X.X1, ((myLinearModel.coef_[1]*X.X2) + (myLinearModel.coef_[0]*X.X1) + myLinearModel.intercept_))
+# plt.plot(X.X1, ((myLinearModel.coef_[1]*X.X2) + (myLinearModel.coef_[0]*X.X1) + myLinearModel.intercept_))
+# plt.plot(X.X1, ((myLinearModel.coef_[1]*X.X2) + (myLinearModel.coef_[0]*X.X1) + myLinearModel.intercept_))
 plt.xlabel('red : no of bedrooms, Green : area')
 plt.ylabel('price of house')
 
@@ -56,7 +57,7 @@ plt.scatter(X.X1, Y, marker='^', c='g')
 plt.scatter(X.X2, Y, marker='^', c='r')
 plt.xlabel('red : no of bedrooms, Green : area')
 plt.ylabel('price of house')
-
+# plt.plot(X.X1, ((myLinearModel_normalized.coef_[1]*X.X2) + (myLinearModel_normalized.coef_[0]*X.X1) + myLinearModel_normalized.intercept_))
 # Linear-Regression starts
 
 # First FIT and then PREDICT !!!
